@@ -8,4 +8,9 @@ text = text.replace('\n', '')
 dataset = {}
 dataset['text'] = text
 
-print(dataset)
+dataset = json.dumps(dataset)
+
+final_set = open('dataset.jsonl', 'w')
+final_set.write(dataset)
+
+print('created')
