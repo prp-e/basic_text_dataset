@@ -13,7 +13,7 @@ new_text = ''.join(new_text)
 print(new_text)
 
 dataset = {}
-dataset['text'] = text
+dataset['text'] = new_text
 
 dataset = json.dumps(dataset)
 
