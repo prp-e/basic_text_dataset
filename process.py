@@ -6,7 +6,8 @@ text = input_text.readlines()
 new_text = []
 for line in text:
     if line.strip():
-        print(line)
+        if not line.isspace():
+            print(line)
 
 dataset = {}
 dataset['text'] = text
