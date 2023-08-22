@@ -2,8 +2,11 @@ import json
 
 input_text = open('story.txt')
 text = input_text.readlines()
-text = ''.join(text)
-text = text.replace('\n', '')
+
+new_text = []
+for line in text:
+    if line.stri():
+        print(line)
 
 dataset = {}
 dataset['text'] = text
