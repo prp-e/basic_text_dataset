@@ -5,4 +5,7 @@ text = input_text.readlines()
 text = ''.join(text)
 text = text.replace('\n', '')
 
+dataset = {}
+dataset['text'] = text
+
 print(text)
