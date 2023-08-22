@@ -5,7 +5,7 @@ text = input_text.readlines()
 
 new_text = []
 for line in text:
-    if line.stri():
+    if line.strip():
         print(line)
 
 dataset = {}
