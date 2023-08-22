@@ -7,7 +7,10 @@ new_text = []
 for line in text:
     if not line.isspace():
         if line.rstrip():
-            print(line)
+            new_text.append(line)
+
+new_text = ''.join(new_text)
+print(new_text)
 
 dataset = {}
 dataset['text'] = text
