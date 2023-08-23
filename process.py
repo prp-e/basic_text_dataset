@@ -1,16 +1,10 @@
 import json 
 
 input_text = open('story.txt')
-text = input_text.readlines()
+text = input_text.read()
 
-new_text = []
-for line in text:
-    if not line.isspace():
-        if line.rstrip():
-            new_text.append(line)
 
-new_text = ' '.join(new_text)
-new_text = new_text.replace('\n', '')
+new_text = text.replace('\n', '')
 
 print(new_text)
 
