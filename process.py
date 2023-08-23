@@ -9,7 +9,7 @@ for line in text:
         if line.rstrip():
             new_text.append(line)
 
-new_text = ''.join(new_text)
+new_text = ' '.join(new_text)
 new_text = new_text.replace('\n', '')
 
 print(new_text)
